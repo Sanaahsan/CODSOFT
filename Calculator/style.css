@@ -63,6 +63,7 @@ body::after{
 }
 .container .Calculator span{
     display: grid;
+    place-items: center;
     width: 75px;
     height: 75px;
     color: white;
@@ -72,6 +73,7 @@ body::after{
     user-select: none;
     border-bottom: 1px solid rgba(255,255,255,0.05);
     border-right: 1px solid rgba (255,255,255,0.05);
+    transition: 0.5s;
 }
 .container .Calculator span:hover{
     transition: 0%;
@@ -86,13 +88,14 @@ body::after{
 .container .Calculator .clear{
     grid-column: span 2;
     width: 150px;
+    background:rgba(255,255,255,0.05);
 
 
 }
 .container .Calculator .plus{
     grid-row: span 2;
-    width: 150px;
+    height: 150px;
 }
-.equal1{
+.equal{
     background: rgba(255,255,255,0.05);
 }
