@@ -58,6 +58,41 @@ body::after{
     font-size: 30px;
     background: transparent;
     color: white;
-    border-bottom:1px solod rgba(255,255,255,0.2);
-    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom:1px solod rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.5);
+}
+.container .Calculator span{
+    display: grid;
+    width: 75px;
+    height: 75px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba (255,255,255,0.05);
+}
+.container .Calculator span:hover{
+    transition: 0%;
+    background-color: rgba(255,255,255,0.05);
+}
+.container .Calculator span:active{
+    background: #14ff47;
+    color:#192f00;
+    font-size: 24px;
+    font-weight: 500;
+}
+.container .Calculator .clear{
+    grid-column: span 2;
+    width: 150px;
+
+
+}
+.container .Calculator .plus{
+    grid-row: span 2;
+    width: 150px;
+}
+.equal1{
+    background: rgba(255,255,255,0.05);
 }
