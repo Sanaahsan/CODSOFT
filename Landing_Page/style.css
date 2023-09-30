@@ -22,3 +22,8 @@ section .circle{
     top: 0;
     
 }
+section .circle{
+    position: absolute;
+    top: 0;
+    
+}
