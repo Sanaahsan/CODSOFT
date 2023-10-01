@@ -6,7 +6,7 @@
     <title> Landing_Page </title>
     <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
 />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -31,12 +31,12 @@
             <div class="imgBox">
                 <div class="swiper_container">
                     <div class="swiper-wrapper">
-                        <div class="swiper_slide"><img src="cocacola1.png"></div>
-                        <div class="swiper_slide"><img src="cocacola2.png"></div>
-                        <div class="swiper_slide"><img src="cocacola3.png"></div>
-                        <div class="swiper_slide"><img src="cocacola4.png"></div>
-                        <div class="swiper_slide"><img src="cocacola5.png"></div>
-                        <div class="swiper_slide"><img src="cocacola6.png"></div>
+                        <div class="swiper-slide"><img src="cocacola1.png"></div>
+                        <div class="swiper-slide"><img src="cocacola2.png"></div>
+                        <div class="swiper-slide"><img src="cocacola3.png"></div>
+                        <div class="swiper-slide"><img src="cocacola4.png"></div>
+                        <div class="swiper-slide"><img src="cocacola5.png"></div>
+                        <div class="swiper-slide"><img src="cocacola6.png"></div>
                        
                     </div>
                 </div>
@@ -48,7 +48,7 @@
             <li><a href="#"><img src="instagram.png"></a></li>
         </ul>  
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container',{
             effect:'coverflow',
@@ -56,15 +56,16 @@
             centeredSlides:true,
             slidesPerView:'auto',
             coverflowEffect:{
-                rotate:50,
+                rotate:0,
                 stretch:0,
-                depth:100,
+                depth:200,
                 modifier:1,
                 slideShadows:true,
             },
             pagination:{
                 el:'.swiper-pagination',
             },
+            loop: true,
         });
     </script>
 </body>
