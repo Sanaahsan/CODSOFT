@@ -97,7 +97,7 @@ header .navigation li a{
     justify-content: center;
     align-items: center;
 }
-.sci .li{
+.sci li{
     list-style: none;
 }
 .sci li a {
